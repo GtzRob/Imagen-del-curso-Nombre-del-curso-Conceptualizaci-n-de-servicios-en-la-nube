@@ -1,0 +1,260 @@
+
+html {
+  box-sizing: content-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20%;
+  background-image: url('fondo.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header, nav, main, footer {
+width: 100%;
+}
+/*estilo del logitipo*/
+header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  margin-left: 0px;
+  max-width: 200px;
+  height: auto;
+
+}
+
+
+/*Estilo del menu horizontal*/
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(167, 167, 148);
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/*estilo de pie de pagina*/
+footer {
+  clear: both;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+}
+
+.datos-contacto {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d9d1d1;
+}
+/*-----------video----------------*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------textos- mision/politicas/preguntas----------------*/
+.box {
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+}
+ /*----------vision y valores-------------*/
+ .texto {
+  width: 35%;
+  float: left;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 70px; 
+  margin-top: 70px;
+}
+
+.texto:last-child {
+  margin-right: 0;
+}
+
+
+/*mapa*/
+
+
+.map {
+  height: 400px;
+  width: 100%;}
+
+
+
+/*---tienda y galeria---*/
+.fila {
+
+  display: flex;
+
+padding:5px;
+
+flex-wrap: wrap;
+
+}
+
+.columna {
+
+  flex: 25%;
+
+padding: 5px;
+
+}
+
+.imagen-con-descripcion {
+  text-align: center;
+  
+  margin-bottom: 20px;
+}
+
+.imagen-con-descripcion img {
+  width: 50px !important; 
+  height: auto;
+  
+}
+
+.imagen-con-descripcion p {
+  width: 80%;
+   /* Asegura que el texto tenga el mismo ancho que la imagen */
+}
+
+
+
+
+/* Media querys */
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80%;
+  padding: 0 10%;
+}
+
+  .columna {
+
+   flex: 50%;
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .columna {
+
+    flex: 100%
+
+  }
+
+}
+
+/*  */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+	box-sizing: border-box;
+
+}
+
+.columna img {
+
+  margin-top: 8px; /* separacion imagenes */
+
+  vertical-align: middle;
+
+  width: 100%;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<div class="container">
+<body>
+    <nav class="nav">
+        <div class="nav_container">
+            <h1 class="nav">
+                <a href="index.html">
+                  <img src="logo.jpg" class="logo" alt="Logotipo de la empresa">
+                </a>
+              </h1>
+           
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        Nosotros
+                        <div class="dropdown-content">
+                            <a href="mision.html">Misíon</a>
+                            <a href="vision.html">Visión</a>
+                            <a href="politicas.html">Políticas</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        Servicios
+                        <div class="dropdown-content">
+                            <a href="ubicacion.html">Ubicación</a>
+                            <a href="galeria.html">Galeria</a>
+                            <a href="tienda.html">Tienda</a>
+                            <a href="pedido.html">Pedido</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        Contacto
+                        <div class="dropdown-content">
+                            <a href="preguntas.html">Preguntas Frecuentes</a>
+                            <a href="formulario.html">Contactanos</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <!-- formulario de contacto -->
+    <section class="proyectos">
+        <div class="contenido">
+            <img src="imagenes/logo.png" height="200">
+            <h2>CONTACTANOS</h2>
+
+            <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required><br>
+                <label for="lugar">Lugar del evento:</label>
+                <input type="text" name="lugar" required><br>
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" name="mensaje" required><br>
+                <label for="indicaciones">Indicaciones:</label>
+                <input type="text" name="indicaciones" required><br>
+                <label for="fotografias">Fotografías:</label>
+                <input type="file" name="fotografias" accept="image/*" multiple><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- pie de pagina -->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a>
+          </div>
+        <br>
+        <div class="datos-contacto">
+          <p>Curso: Conceptualización de servicios en la nube</p>
+          <p>Lucero Gutierrez Robles   codigo: 222352964</p>
+          <p>email: gtzroblucero@gmail.com</p>
+      </div>
+        
+        
+    </footer>
+</body></div>
+</html>
